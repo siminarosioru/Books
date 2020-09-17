@@ -83,6 +83,11 @@ namespace Books
 
             objectBook.NEWBook = Convert.ToString(textInput.Text);
 
+            foreach(var book in listBooks.Items)
+            {
+                objectBook.NEWBook += book + Environment.NewLine;
+            }
+
             MessageBox.Show(objectBook.BOOK + objectBook.NEWBook);
         }
 
